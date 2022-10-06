@@ -1,3 +1,19 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Fraunces:opsz,wght@9..144,700;9..144,900&display=swap");
+:root {
+  /* Primary */
+  --Soft-red: hsl(7, 99%, 70%);
+  --Yellow: hsl(51, 100%, 49%);
+  --Dark-desaturated-cyan: hsl(167, 40%, 24%); /* graphic design text */
+  --Dark-blue: hsl(198, 62%, 26%); /* photography text*/
+  --Dark-moderate-cyan: hsl(168, 34%, 41%); /* footer*/
+  /* Neutral */
+  --Very-dark-desaturated-blue: hsl(212, 27%, 19%);
+  --Very-dark-grayish-blue: hsl(213, 9%, 39%);
+  --Dark-grayish-blue: hsl(232, 10%, 55%);
+  --Grayish-blue: hsl(210, 4%, 67%);
+  --White: hsl(0, 0%, 100%);
+}
+
 *,
 *::before,
 *::after {
@@ -5,17 +21,80 @@
   padding: 0;
   margin: 0;
 }
-:root {
-  /* Primary */
-  --Soft-red: hsl(7, 99%, 70%)
-  --Yellow: hsl(51, 100%, 49%)
-  --Dark-desaturated-cyan: hsl(167, 40%, 24%)   /* graphic design text */
-  --Dark-blue: hsl(198, 62%, 26%); /* photography text*/
-  --Dark-moderate-cyan: hsl(168, 34%, 41%) /* footer*/
-  /* Neutral */
-  --Very-dark-desaturated blue: hsl(212, 27%, 19%)
-  --Very-dark-grayish blue: hsl(213, 9%, 39%)
-  --Dark-grayish-blue: hsl(232, 10%, 55%)
-  --Grayish-blue: hsl(210, 4%, 67%)
-  --White: hsl(0, 0%, 100%) 
+
+/* font-family: 'Barlow', sans-serif;
+font-family: 'Fraunces', serif; */
+
+#main {
+  background-color: gray;
+  min-height: 100vh;
+  width: 100%;
+}
+
+.container {
+  padding: 0 1rem;
+}
+/**** Nav ****/
+#nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 8vh;
+  width: 100%;
+  position: relative;
+  font-family: "Barlow", sans-serif;
+}
+
+.nav__logo {
+  cursor: pointer;
+}
+/* nav links*/
+.nav__links::before {
+  content: "";
+  position: absolute;
+  height: 0px;
+  width: 0px;
+  top: -25px;
+  right: 0;
+  border-style: solid;
+  border-width: 0 0 25px 25px;
+  border-color: transparent transparent var(--White) transparent;
+}
+.nav__links {
+  position: absolute;
+  top: 130%;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 35vh;
+  width: 90%;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--White);
+  color: var(--Grayish-blue);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.2s ease-in-out;
+  z-index: -1;
+}
+.nav__link {
+  margin: 1rem 0;
+  font-size: 1.5rem;
+}
+.nav__link--contact {
+  font-family: "Fraunces", serif;
+  padding: 1.3rem 2rem;
+  border-radius: 30px;
+  background-color: var(--Yellow);
+  color: var(--Very-dark-desaturated-blue);
+  font-size: 1.2rem;
+  font-weight: 900;
+}
+
+.nav__links.active {
+  opacity: 1;
+  pointer-events: all;
+  z-index: 2;
 }
