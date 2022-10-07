@@ -131,21 +131,20 @@ font-family: 'Fraunces', serif; */
   height: 150px;
 }
 
-/**** Transform Section ****/
-#transform__section {
+/**** SubSections ****/
+#subsection {
   height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-.transform__img {
-  background-image: url(/assets/mobile/image-transform.jpg);
+.section__img {
   height: 40vh;
   width: 100%;
   background-position: center;
   background-size: contain;
 }
-.transform__text {
+.section__text {
   height: 60vh;
   background-color: var(--White);
   display: flex;
@@ -154,26 +153,29 @@ font-family: 'Fraunces', serif; */
   justify-content: space-evenly;
   text-align: center;
 }
-.transform__text__h2 {
+.section__text__h2 {
   font-family: "Fraunces", serif;
   font-weight: 900;
   font-size: 2rem;
   color: var(--Very-dark-desaturated-blue);
 }
-.transform__text__p {
+.section__text__p {
   color: var(--Dark-grayish-blue);
   font-family: "Barlow";
-  padding: 0 1rem;
   line-height: 1.5;
   font-size: 1.2rem;
 }
-.transform__text__link {
+.section__text__link {
   text-decoration: none;
   cursor: pointer;
   font-family: "Fraunces", serif;
   font-weight: 900;
   color: var(--Very-dark-desaturated-blue);
   position: relative;
+}
+/**** Transform Section ****/
+.transform__section__img {
+  background-image: url(/assets/mobile/image-transform.jpg);
 }
 .transform__text__link::after {
   content: "";
@@ -185,4 +187,55 @@ font-family: 'Fraunces', serif; */
   left: -5px;
   border-radius: 20px;
   opacity: 0.3;
+}
+/**** Standout Section ****/
+.standout__section__img {
+  background-image: url(/assets/mobile/image-stand-out.jpg);
+}
+.standout__text__link::after {
+  content: "";
+  position: absolute;
+  height: 10px;
+  width: 110%;
+  background-color: var(--Soft-red);
+  bottom: -5px;
+  left: -5px;
+  border-radius: 20px;
+  opacity: 0.3;
+}
+.subsection__content {
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  text-align: center;
+}
+/**** Graphic Design Section ****/
+.subsection__content--graphicDesign {
+  background-image: url(/assets/mobile/image-graphic-design.jpg);
+}
+.section__text__h2--graphicDesign {
+  color: var(--Dark-desaturated-cyan);
+}
+.section__text__p--graphicDesign {
+  margin: 2rem 0 4rem 0;
+  color: var(--Dark-desaturated-cyan);
+  font-size: 1rem;
+  font-weight: 600;
+}
+/**** Photography Section ****/
+.subsection__content--photography {
+  background-image: url(/assets/mobile/image-photography.jpg);
+}
+.section__text__h2--photography {
+  color: var(--Dark-blue);
+}
+.section__text__p--photography {
+  margin: 2rem 0 4rem 0;
+  color: var(--Dark-blue);
+  font-size: 1rem;
+  font-weight: 600;
 }
