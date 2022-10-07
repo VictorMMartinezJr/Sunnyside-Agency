@@ -34,12 +34,23 @@ font-family: 'Fraunces', serif; */
 .container {
   padding: 0 1rem;
 }
-/**** Nav ****/
+
+/**** Header ****/
+#header-section {
+  min-height: 100vh;
+  background-image: url(/assets/mobile/image-header.jpg);
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+/** nav **/
 #nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 8vh;
+  height: 10vh;
   width: 100%;
   position: relative;
   font-family: "Barlow", sans-serif;
@@ -97,4 +108,81 @@ font-family: 'Fraunces', serif; */
   opacity: 1;
   pointer-events: all;
   z-index: 2;
+}
+/** header content*/
+.header__content {
+  flex: 0.5;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.header__content__h1 {
+  font-size: 2.8rem;
+  letter-spacing: 8px;
+  text-align: center;
+  color: var(--White);
+  font-family: "Fraunces", serif;
+  font-weight: 900;
+}
+.header__content__arrow {
+  position: relative;
+  top: 7rem;
+  height: 150px;
+}
+
+/**** Transform Section ****/
+#transform__section {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.transform__img {
+  background-image: url(/assets/mobile/image-transform.jpg);
+  height: 40vh;
+  width: 100%;
+  background-position: center;
+  background-size: contain;
+}
+.transform__text {
+  height: 60vh;
+  background-color: var(--White);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  text-align: center;
+}
+.transform__text__h2 {
+  font-family: "Fraunces", serif;
+  font-weight: 900;
+  font-size: 2rem;
+  color: var(--Very-dark-desaturated-blue);
+}
+.transform__text__p {
+  color: var(--Dark-grayish-blue);
+  font-family: "Barlow";
+  padding: 0 1rem;
+  line-height: 1.5;
+  font-size: 1.2rem;
+}
+.transform__text__link {
+  text-decoration: none;
+  cursor: pointer;
+  font-family: "Fraunces", serif;
+  font-weight: 900;
+  color: var(--Very-dark-desaturated-blue);
+  position: relative;
+}
+.transform__text__link::after {
+  content: "";
+  position: absolute;
+  height: 10px;
+  width: 110%;
+  background-color: var(--Yellow);
+  bottom: -5px;
+  left: -5px;
+  border-radius: 20px;
+  opacity: 0.3;
 }
