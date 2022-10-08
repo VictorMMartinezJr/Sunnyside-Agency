@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sunnyside Agency</title>
     <link rel="stylesheet" href="style.css" />
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script src="app.js" defer></script>
   </head>
   <body>
@@ -46,7 +48,8 @@
       <!-------------------------->
       <section id="transform__section">
         <div class="transform__section__img section__img"></div>
-        <div class="section__text container">
+        <div class="section__text section__text--transform container">
+          <div class="section__text__content">
           <h2 class="section__text__h2">Transform your brand</h2>
           <p class="section__text__p">
             We are a full-service creative agency specializing in helping brands
@@ -56,14 +59,16 @@
           <a href="#" class="transform__text__link section__text__link"
             >LEARN MORE</a
           >
+          </div>
         </div>
       </section>
       <!-------------------------->
       <!--  Stand Out Section   -->
       <!-------------------------->
-      <section id="subsection">
+      <section id="standout__section">
         <div class="standout__section__img section__img"></div>
-        <div class="section__text container">
+        <div class="section__text section__text--standout container">
+          <div class="section__text__content">
           <h2 class="section__text__h2">Stand out to the right audience</h2>
           <p class="section__text__p">
             Using a collaborative formula of designers, researchers,
@@ -73,12 +78,13 @@
           <a href="#" class="standout__text__link section__text__link"
             >LEARN MORE</a
           >
+          </div
         </div>
       </section>
       <!------------------------------->
       <!--  Graphic Design Section   -->
       <!------------------------------->
-      <section id="subsection">
+      <section id="subsection--mobile">
         <div
           class="subsection__content subsection__content--graphicDesign container"
         >
@@ -95,7 +101,7 @@
       <!---------------------------->
       <!--  Photography Section   -->
       <!---------------------------->
-      <section id="subsection">
+      <section id="subsection--mobile">
         <div
           class="subsection__content subsection__content--photography container"
         >
@@ -108,6 +114,37 @@
           </p>
         </div>
       </section>
+      <!---------------------->
+      <!--  DESKTOP ONLY    -->
+      <!---------------------->
+      <section id="subsection--desktop">
+        <!-- Graphic Design -->
+         <div
+          class="subsection__content subsection__content--graphicDesign container"
+        >
+          <h2 class="section__text__h2 section__text__h2--graphicDesign">
+            Graphic Design
+          </h2>
+          <p class="section__text__p section__text__p--graphicDesign">
+            Great design makes you memorable. We deliver artwork that
+            underscores your brand message and captures potential clients’
+            attention.
+          </p>
+        </div>
+        <!-- Photography -->
+        <div
+          class="subsection__content subsection__content--photography container"
+        >
+          <h2 class="section__text__h2 section__text__h2--photography">
+            Photography
+          </h2>
+          <p class="section__text__p section__text__p--photography">
+            Increase your credibility by getting the most stunning, high-quality
+            photos that improve your business image.
+          </p>
+        </div>
+      </section>
+
       <!----------------------------->
       <!--  Testimonials Section   -->
       <!----------------------------->
@@ -192,10 +229,10 @@
         </ul>
         <!-- footer socials -->
         <div class="footer__socials container">
-          <img src="/assets/icon-facebook.svg" alt="facebook" class="footer__social">
-          <img src="/assets/icon-instagram.svg" alt="instagram" class="footer__social">
-          <img src="/assets/icon-twitter.svg" alt="twitter" class="footer__social">
-          <img src="/assets/icon-pinterest.svg" alt="pinterest" class="footer__social">
+          <i class="fa-brands fa-square-facebook footer__social"></i>
+          <i class="fa-brands fa-instagram footer__social"></i>
+          <i class="fa-brands fa-twitter footer__social"></i>
+          <i class="fa-brands fa-pinterest footer__social"></i>
         </div>
       </footer>
     </main>
